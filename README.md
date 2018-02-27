@@ -7,6 +7,7 @@ Linux 16.04.5 LTS x64. No leak detected using Valgrind.
 This piece of software converts a non-RLE bitmap file to a RLE bitmap file. More
 informations about the Run-Length Encoding (RLE) algorithm can be found here:
 https://en.wikipedia.org/wiki/Run-length_encoding
+
 This implementation deals directly with bitmap (bmp) images without the usage of
 any third-party library. RLE bmp are natively supported by most of image viewers
 and can be opened easily. RLE is a lossless compression algorithm that works
@@ -14,6 +15,7 @@ best with pictures that have a tight color palette.
 
 ## Usage
 Compression: "./rlec -c [-n=<output bmp file path>] <input bmp file path>".
+
 Decompression: "./rlec -d [-n=<output bmp file path>] <input bmp file path>".
 
 DONATION:
