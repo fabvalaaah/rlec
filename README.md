@@ -4,9 +4,9 @@ C RLE bitmap (bmp) file compression and decompression.
 This is a C NetBeans project, compiled with GCC 5.4.0 and tested with Ubuntu
 Linux 16.04.5 LTS x64. No leak detected using Valgrind.
 
-This piece of software converts a non-RLE bitmap file to a RLE bitmap file. More
-informations about the Run-Length Encoding (RLE) algorithm can be found here:
-https://en.wikipedia.org/wiki/Run-length_encoding
+This piece of software converts a non-RLE bitmap file into a RLE bitmap file.
+More informations about the Run-Length Encoding (RLE) algorithm can be found
+here: https://en.wikipedia.org/wiki/Run-length_encoding
 
 This implementation deals directly with bitmap (bmp) images without the usage of
 any third-party library. RLE bmp are natively supported by most of image viewers
