@@ -14,9 +14,9 @@ and can be opened easily. RLE is a lossless compression algorithm that works
 best with pictures that have a tight color palette.
 
 ## Usage
-Compression: "./rlec -c [-n=<output bmp file path>] <input bmp file path>".
+Compression: "./rlec -c [-n=output.bmp] input.bmp".
 
-Decompression: "./rlec -d [-n=<output bmp file path>] <input bmp file path>".
+Decompression: "./rlec -d [-n=output.bmp] input.bmp".
 
 DONATION:
 As I share these sources for commercial use too, maybe you could consider
