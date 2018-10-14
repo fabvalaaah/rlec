@@ -47,10 +47,10 @@
 
 #include "common.h"
 
-FILE* openFile(const char* chemin, const char* mode) {
+FILE* openFile(const char* filePath, const char* mode) {
     FILE* ptr = NULL;
 
-    ptr = fopen(chemin, mode);
+    ptr = fopen(filePath, mode);
 
     return ptr;
 }
