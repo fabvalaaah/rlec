@@ -1,6 +1,6 @@
 # rlec
 
-Bitmap (bmp) file Run-Length Encoding (RLE) compression and decompression command line program, written in ANSI C for Linux.
+Bitmap (bmp) file Run-Length Encoding (RLE) compression and decompression command line program, written in ANSI C for Unix/Linux.
 
 RLE is a bitmap native lossless compression algorithm. As a consequence, RLE bitmap files resulting from this program are supported by most of image viewers and if so, can be opened as is.
 
@@ -8,7 +8,7 @@ This implementation deals directly with bitmap images without the usage of any t
 
 ## Installation
 
-Compilation (using `gcc`) ⇨ `./COMPILE.sh`<br/>
+Compilation (using `GCC`) ⇨ `./COMPILE.sh`<br/>
 Usage example ⇨ `./EXAMPLE.sh`<br/>
 Cleaning (removes binary and test generated files) ⇨ `./CLEAN.sh`
 
