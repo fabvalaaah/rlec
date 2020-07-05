@@ -1,3 +1,4 @@
-./grey.bmp
-./grey_rle.bmp
-./rlec
+samples/
+grey.bmp
+grey_rle.bmp
+rlec
