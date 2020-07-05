@@ -1,35 +1,35 @@
 # rlec
-C RLE bitmap (bmp) file compression and decompression.
 
-This is a C NetBeans project, compiled with GCC 5.4.0 and tested with Ubuntu
-Linux 16.04.5 LTS x64. No leak detected using Valgrind.
+Bitmap (bmp) file Run-Length Encoding (RLE) compression and decompression command line program, written in ANSI C for Linux (using `gcc`).
 
-This piece of software converts a non-RLE bitmap file into a RLE bitmap file.
-More informations about the Run-Length Encoding (RLE) algorithm can be found
-here: https://en.wikipedia.org/wiki/Run-length_encoding
+RLE is a bitmap native lossless compression algorithm. As a consequence, RLE bitmap files resulting from this program are supported by most of image viewers and if so, can be opened as is.
 
-This implementation deals directly with bitmap (bmp) images without the usage of
-any third-party library. RLE bmp are natively supported by most of image viewers
-and can be opened easily. RLE is a lossless compression algorithm that works
-best with pictures that have a tight color palette.
+This implementation deals directly with bitmap images without the usage of any third-party library.
+
+## Installation
+
+Compilation ⇨ `./COMPILE.sh`<br/>
+Usage example ⇨ `./EXAMPLE.sh`<br/>
+Cleaning (removes binary and test generated files) ⇨ `./CLEAN.sh`
 
 ## Usage
-Compression: "./rlec -c [-n=output.bmp] input.bmp".
 
-Decompression: "./rlec -d [-n=output.bmp] input.bmp".
+NAME<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rlec - compress/decompress a bitmap file using RLE algorithm
 
-DONATION:
-As I share these sources for commercial use too, maybe you could consider
-sending me a reward (even a tiny one) to my Ethereum wallet at the address
-0x1fEaa1E88203cc13ffE9BAe434385350bBf10868
-If so, I would be forever grateful to you and motivated to keep up the good work
-for sure :oD Thanks in advance !
+SYNOPSIS<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`rlec {-c|-d} [-n=<OUTPUT_FILE_PATH>] <INPUT_FILE_PATH>`
 
-FEEDBACK:
-You like my work? It helps you? You plan to use/reuse/transform it? You have
-suggestions or questions about it? Just want to say "hi"? Let me know your
-feedbacks by mail to the address fabvalaaah@laposte.net
+OPTIONS<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compress/decompress the file INPUT_FILE_PATH.<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compression mode<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decompression mode<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-n=<OUTPUT_FILE_PATH><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path to output file (default is the same directory as the input file)
 
-DISCLAIMER:
-I am not responsible in any way of any consequence of the usage of this piece of
-software. You are warned, use it at your own risks.
+File resulting from compression operation is automatically created with the suffix `_rle` added to the name of the input file.<br/>
+File resulting from decompression operation is automatically created with the suffix `_raw` added to the name of the input file.
+
+## Disclaimer
+
+I am not responsible in any way of any consequence of the usage of this piece of software. You are warned, use it at your own risks.
