@@ -8,9 +8,9 @@ This implementation deals directly with bitmap images without the usage of any t
 
 ## Installation
 
-Compilation (using `gcc`) ⇨ _./COMPILE.sh_<br/>
-Usage example ⇨ _./EXAMPLE.sh_<br/>
-Cleaning (removes binary and test generated files) ⇨ _./CLEAN.sh_
+- Compilation (using `gcc`) ⇨ _./COMPILE.sh_<br/>
+- Usage example ⇨ _./EXAMPLE.sh_<br/>
+- Cleaning (removes binary and test generated files) ⇨ _./CLEAN.sh_
 
 ## Usage
 
