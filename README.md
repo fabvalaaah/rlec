@@ -8,9 +8,9 @@ This implementation deals directly with bitmap images without the usage of any t
 
 ## Installation
 
-Compilation (using `GCC`) ⇨ `./COMPILE.sh`<br/>
-Usage example ⇨ `./EXAMPLE.sh`<br/>
-Cleaning (removes binary and test generated files) ⇨ `./CLEAN.sh`
+Compilation (using `gcc`) ⇨ _./COMPILE.sh_<br/>
+Usage example ⇨ _./EXAMPLE.sh_<br/>
+Cleaning (removes binary and test generated files) ⇨ _./CLEAN.sh_
 
 ## Usage
 
@@ -27,8 +27,8 @@ OPTIONS<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-n=<OUTPUT_FILE_PATH><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path to output file (default is the same directory as the input file)
 
-File resulting from compression operation is automatically created with the suffix `_rle` added to the name of the input file.<br/>
-File resulting from decompression operation is automatically created with the suffix `_raw` added to the name of the input file.
+File resulting from compression operation is automatically created with the suffix "_\_rle_" added to the name of the input file.<br/>
+File resulting from decompression operation is automatically created with the suffix "_\_raw_" added to the name of the input file.
 
 ## Disclaimer
 
