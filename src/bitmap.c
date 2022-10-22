@@ -1,7 +1,7 @@
 /**
  * MIT License
  *
- * Copyright (c) 2018 Fabvalaaah - fabvalaaah@laposte.net
+ * Copyright (c) 2018 Fabvalaaah
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -35,11 +35,9 @@ const uint8_t imageEnd = 0x01;
 
 void printHeader(_bitmap *image)
 {
-    fprintf(stdout, "\tMagic number: %c%c\n", image->magicNumber[0],
-            image->magicNumber[1]);
+    fprintf(stdout, "\tMagic number: %c%c\n", image->magicNumber[0], image->magicNumber[1]);
     fprintf(stdout, "\tSize: %u\n", image->size);
-    fprintf(stdout, "\tReserved: %u %u %u %u\n", image->reserved[0],
-            image->reserved[1], image->reserved[2], image->reserved[3]);
+    fprintf(stdout, "\tReserved: %u %u %u %u\n", image->reserved[0], image->reserved[1], image->reserved[2], image->reserved[3]);
     fprintf(stdout, "\tStart offset: %u\n", image->startOffset);
     fprintf(stdout, "\tHeader size: %u\n", image->headerSize);
     fprintf(stdout, "\tWidth: %u\n", image->width);
