@@ -8,9 +8,6 @@
 
 #include "common.h"
 
-const uint8_t lineFeed;
-const uint8_t imageEnd;
-
 typedef struct __attribute__((__packed__)) _bitmap
 {
     uint8_t magicNumber[2];
