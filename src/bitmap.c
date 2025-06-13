@@ -103,6 +103,13 @@ int RLECompression(FILE *ptrIn, FILE *ptrOut)
     }
     /* ------- */
 
+    /* Ensuring correct image size */
+    if (!image->imageSize)
+    {
+        image->imageSize = image->width * image->height * image->depth / 8;
+    }
+    /* ------- */
+
     printHeader(image);
 
     /* Skipping data from the beginning to the start offset */
@@ -373,6 +380,28 @@ int RLEDecompression(FILE *ptrIn, FILE *ptrOut)
                 data[total] = couples[1];
                 total++;
             }
+        }
+	else if (couples[1] >= 3)
+        {
+            /* Absolute sequence */
+            lecture = fread(&data[total], 1, couples[1], ptrIn);
+            if (lecture != couples[1])
+            {
+                fprintf(stderr, "Error while reading input data\n");
+                ok = false;
+                goto cleaning;
+            }
+            total += lecture;
+            /* Ensure file pointer is word-aligned */
+            if (couples[1] & 1)
+            {
+                fseek(ptrIn, +1, SEEK_CUR);
+            }
+        }
+	else if (couples[1] == 1)
+        {
+            /* End of frame */
+            break;
         }
     }
     /* ------- */
